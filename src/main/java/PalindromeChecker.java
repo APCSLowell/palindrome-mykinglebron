@@ -35,41 +35,41 @@ public void tester()
     }
   }
 }
-public boolean palindrome (String word)
+public boolean palindrome(String word)
 {
-String str = noCapitals(noSpaces(onlyLetters(word)));
-  if (str.equals(reverse(str))) {
+ String coltMan = noCapitals(noSpaces(onlyLetters(word))); 
+  if (coltMan.equals(reverse(coltMan))) { 
     return true;
-  }
+  } 
   return false;
 }
 public String reverse(String str)
 {
     String sNew = new String();
-  for (int i = str.length(); i > 0; i--) {
+    for (int i = str.length(); i > 0; i--) { 
     sNew = sNew + str.substring(i - 1, i);
-  }
+  } 
     return sNew;
 }
 }
-public String noCapitals(String sWord) {
+public String noCapitals(String sWord) { 
   return sWord.toLowerCase();
-}
-public String noSpaces(String sWord) {
-  String str = "";
-  for (int i = 0; i < sWord.length(); i++) {
-    if (!sWord.substring(i, i + 1).equals(" ")) {
-      str = str + sWord.substring(i, i + 1);
+} 
+public String noSpaces(String sWord) { 
+  String coltMan = ""; 
+  for (int i = 0; i < sWord.length(); i++) { 
+    if (!sWord.substring(i, i + 1).equals(" ")) { 
+      coltMan = coltMan + sWord.substring(i, i + 1);
     }
-  }
-  return str;
-}
-public String onlyLetters(String sString) {
-  String str = "";
-  for (int i = 0; i < sString.length(); i++) {
-    if (Character.isLetter(sString.charAt(i))) {
-      str = str + sString.charAt(i);
+  } 
+  return coltMan;
+} 
+public String onlyLetters(String sString) { 
+  String coltMan = ""; 
+  for (int i = 0; i < sString.length(); i++) { 
+    if (Character.isLetter(sString.charAt(i))) { 
+      coltMan = coltMan + sString.charAt(i);
     }
-  }
-  return str;
+  } 
+  return coltMan;
 }
