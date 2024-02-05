@@ -51,8 +51,7 @@ public String reverse(String str)
   } 
     return sNew;
 }
-}
-public String noCapitals(String sWord) { 
+  public String noCapitals(String sWord) { 
   return sWord.toLowerCase();
 } 
 public String noSpaces(String sWord) { 
@@ -74,3 +73,5 @@ public String onlyLetters(String sString) {
   return coltMan;
 }
 
+
+}
